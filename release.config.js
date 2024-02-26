@@ -19,7 +19,7 @@ module.exports = {
       [
         '@semantic-release/git', // 新增CHANGELOG.md後，進行commit
         {
-          assets: ['CHANGELOG.md', 'pom.xml'], // commit 要加入的檔案
+          assets: ['document/CHANGELOG.md', 'pom.xml', 'build.env'], // commit 要加入的檔案
           message:
             'chore(release): ${nextRelease.version} [skip ci]', //commit 時的 message
         },
