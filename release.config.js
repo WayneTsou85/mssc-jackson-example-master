@@ -13,7 +13,7 @@ module.exports = {
         {
           mangle: false,
           headerIds: false,
-          changelogFile: 'CHANGELOG.md', //設定檔案名稱
+          changelogFile: 'document/CHANGELOG.md', //設定檔案名稱
         },
       ],
       [
