@@ -15,6 +15,7 @@ public class ObjectMapperConfig {
     ObjectMapper objectMapper() {
         return JsonMapper.builder()
                 .withCoercionConfig(LogicalType.Boolean, b -> b.setCoercion(CoercionInputShape.Integer, CoercionAction.Fail))
+                .withCoercionConfig(LogicalType.Boolean, b -> b.setCoercion(CoercionInputShape.Integer, CoercionAction.Fail))
                 .build();
     }
 }
