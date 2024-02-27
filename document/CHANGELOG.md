@@ -1,3 +1,10 @@
+# [1.3.0](https://github-waynetsou85/WayneTsou85/mssc-jackson-example-master/compare/v1.2.0...v1.3.0) (2024-02-27)
+
+
+### Features
+
+* **JsonObjectMapper:** 更新配置 ([f16469c](https://github-waynetsou85/WayneTsou85/mssc-jackson-example-master/commit/f16469cd555eb1ae3f2a85587adfe43ebff309e3))
+
 # [1.2.0](https://github-waynetsou85/WayneTsou85/mssc-jackson-example-master/compare/v1.1.1...v1.2.0) (2024-02-27)
 
 
