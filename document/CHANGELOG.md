@@ -1,3 +1,10 @@
+# [1.2.0](https://github-waynetsou85/WayneTsou85/mssc-jackson-example-master/compare/v1.1.1...v1.2.0) (2024-02-27)
+
+
+### Features
+
+* 調整設定 ([e2db397](https://github-waynetsou85/WayneTsou85/mssc-jackson-example-master/commit/e2db3971f1960aea729dd1fcdd3ca7e42252228c))
+
 ## [1.1.1](https://github-waynetsou85/WayneTsou85/mssc-jackson-example-master/compare/v1.1.0...v1.1.1) (2024-02-26)
 
 
