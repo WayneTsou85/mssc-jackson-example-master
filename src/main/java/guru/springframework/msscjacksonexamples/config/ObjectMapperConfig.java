@@ -13,10 +13,8 @@ public class ObjectMapperConfig {
 
     @Bean
     ObjectMapper objectMapper() {
-        JsonMapper build = JsonMapper.builder()
+        return JsonMapper.builder()
                 .withCoercionConfig(LogicalType.Boolean, b -> b.setCoercion(CoercionInputShape.Integer, CoercionAction.Fail))
                 .build();
-        System.out.println(build.coercionConfigDefaults());
-        return build;
     }
 }
