@@ -6,7 +6,7 @@ module.exports = {
       '@semantic-release/commit-analyzer',//分析你的 commit message,有沒有 feat or fix, 只有這兩個跟Version有關
       '@semantic-release/release-notes-generator',
       ["@semantic-release/exec", {
-            verifyReleaseCmd: 'mvn versions:set -DnewVersion="${nextRelease.version}" && echo "NEXT_VERSION=${nextRelease.version}" >> build.env'
+            verifyReleaseCmd: 'mvn versions:set -DnewVersion="${nextRelease.version} -DgenerateBackupPoms=false" && echo "NEXT_VERSION=${nextRelease.version}" >> build.env'
         }],
       [
         '@semantic-release/changelog', //產生CHANGELOG

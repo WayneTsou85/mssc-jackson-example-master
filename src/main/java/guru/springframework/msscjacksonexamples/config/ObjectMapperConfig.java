@@ -3,6 +3,7 @@ package guru.springframework.msscjacksonexamples.config;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.cfg.CoercionAction;
 import com.fasterxml.jackson.databind.cfg.CoercionInputShape;
+import com.fasterxml.jackson.databind.deser.DeserializationProblemHandler;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.databind.type.LogicalType;
 import org.springframework.context.annotation.Bean;
@@ -16,6 +17,12 @@ public class ObjectMapperConfig {
         return JsonMapper.builder()
                 .withCoercionConfig(LogicalType.Boolean, b -> b.setCoercion(CoercionInputShape.Integer, CoercionAction.Fail))
                 .withCoercionConfig(LogicalType.Boolean, b -> b.setCoercion(CoercionInputShape.Integer, CoercionAction.Fail))
+//                .addHandler()
+//                .handlerInstantiator()
                 .build();
+    }
+
+    public static class CustomHandler extends DeserializationProblemHandler {
+
     }
 }
